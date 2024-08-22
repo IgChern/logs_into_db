@@ -41,10 +41,13 @@ Django приложение для обработки и агрегации ло
 2. [http://127.0.0.1:8000/swagger/](http://127.0.0.1:8000/swagger/) - API документация
 3. [http://127.0.0.1:8000/redoc/](http://127.0.0.1:8000/redoc/) - API документация
 
-### 6. Запуск тестов для проверки модели:
+### 6. Запуск тестов для проверки модели и парсинга из файла:
 
     docker ps
     docker exec -it <DockerID_fix_logs-django> python3 manage.py test
+    docker exec -it <DockerID_fix_logs-django> python3 manage.py parse_logs "https://drive.google.com/uc?id=18Ss9afYL8xTeyVd0ZTfFX9dqja4pBGVp"
+
+
 
 
 ### 7. Остановка Docker контейнера:
