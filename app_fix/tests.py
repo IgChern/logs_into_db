@@ -1,5 +1,3 @@
-# app_fix/tests/test_models.py
-
 from django.test import TestCase
 from django.utils import timezone
 
